@@ -36,7 +36,7 @@ public class HtmlBuilderService {
             html.append("<h3>").append(escapeHtml(p.getName())).append("</h3>");
 
             if (p.getImage() != null && p.getId() != null) {
-                // استفاده از URL واقعی به جای base64
+
                 String imageUrl = baseUrl + "/product/" + p.getId() + "/image";
                 html.append("<img src='").append(imageUrl).append("'")
                         .append(" alt='").append(escapeHtml(p.getName())).append("'")
